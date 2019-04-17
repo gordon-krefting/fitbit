@@ -27,8 +27,6 @@ parser.add_argument(
 dates_to_process = parser.parse_args().date
 
 fitbit = connect.get_client()
-# target_date = str((datetime.datetime.now() - datetime.timedelta(days=15))
-#                  .strftime("%Y-%m-%d"))
 
 
 def get_intraday_df(target_date, label, endpoint, json_element):
