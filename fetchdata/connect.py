@@ -16,7 +16,6 @@ def get_client():
 
     print("Using credentials from credentials.json")
 
-    # Store these keys better
     client = fitbit.Fitbit(keys['client_id'],
                            keys['client_secret'],
                            oauth2=True,
